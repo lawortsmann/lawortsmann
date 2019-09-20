@@ -1,6 +1,9 @@
 # lawortsmann
 My website: lawortsmann.com
 
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04
 
 --- BASIC USAGE ---
 
