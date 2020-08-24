@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--
-
--->
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Luke Wortsmann">
     <meta name="author" content="Luke Wortsmann">
     <meta name="google-site-verification" content="lxDnysPclvu14az26-4AdwcjkZIILW37LRAwpwwH3oo" />
-
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
     <title>Luke Wortsmann</title>
-
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body>
 
-    <!-- Navigation -->
+<body>
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle" style="display: none;"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -56,14 +41,12 @@
         </ul>
     </nav>
 
-    <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Luke Wortsmann</h1>
         </div>
     </header>
 
-    <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
@@ -72,12 +55,9 @@
                     <p class="lead">I studied Physics at the University of Illinois Urbana-Champaign.</p>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
-    <!-- Links -->
     <section id="links" class="call-to-action bg-primary">
         <div class="container">
             <div class="row">
@@ -85,13 +65,11 @@
                     <h3>Links</h3>
                     <a href="cv_2.pdf" target="_blank" class="btn btn-lg btn-dark">My Resume</a>
                     <a href="http://github.com/lawortsmann" target="_blank" class="btn btn-lg btn-dark">My Github</a>
-                    <!-- <a href="https://research.lawortsmann.com" target="_blank" class="btn btn-lg btn-dark">My Server</a> -->
-		</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div id="contact" class="container">
             <div class="row">
@@ -111,14 +89,19 @@
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
+    <script src="js/jquery.js"></script>
     <script>
+    // Change background
+    $(document).ready(function() {
+      var images = ["binary.png", "bone.png", "coolwarm.png", "cubehelix.png", "gist_ncar.png", "gnuplot.png", "gray.png", "inferno.png", "jet.png", "magma.png", "pink.png", "Purples.png", "rainbow.png", "Spectral.png", "twilight_shifted.png", "twilight.png", "viridis.png", "YlOrRd.png"];
+      var path = 'img/' + images[Math.floor(Math.random() * images.length)];
+      // $('body').css('header.background', path);
+      document.body.getElementsByClassName('header')[0].style.background = "url(" + path + ") no-repeat center center scroll";
+      document.body.getElementsByClassName('header')[0].style.backgroundColor = "rgb(0,0,0)";
+      document.body.getElementsByClassName('header')[0].style.webkitBackgroundSize = "cover";
+      document.body.getElementsByClassName('header')[0].style.backgroundSize = "cover";
+    });
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -176,7 +159,6 @@
             });
         });
     }, 1000);
-
     </script>
 
     <script>
@@ -187,8 +169,6 @@
       ga('create', 'UA-96564637-1', 'auto');
       ga('send', 'pageview');
     </script>
-
-    <div style="background-color: rgb(255, 0, 255); width: 1px; height: 1px; position: fixed; top: 126px; left: 242px; z-index: 9999;"></div>
 
 </body>
 
